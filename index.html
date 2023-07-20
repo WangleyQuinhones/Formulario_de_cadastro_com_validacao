@@ -17,22 +17,26 @@
         <h1 class="signup__title">Cadastre-se</h1>
         <form class="form">
             <div class="form__group">
-                <label class="form__label">Nome</label>
+                <label class="form__label" for="inputName">Nome</label>
+                <input type="text" name="name" class="form__input-text" id="inputName" placeholder="Nome"/>
             </div>
             <div class="form__group"></div>
-                <label class="form__label">Email</label>
+                <label class="form__label" for="inputemail">E-mail</label>
+                <input type="email" name="email" class="form__input-text" id="inputemail" placeholder="E-mail"/>
             <div class="form__group">
 
             </div>
-                <label class="form__label">Senha</label>
+                <label class="form__label" for="inputpassword">Senha</label>
+                <input type="password" name="password" class="form__input-text" id="inputpassword" placeholder="Senha"/>
             <div class="form__group">
 
             </div>
-                <label class="form__label">Concordo com os termos e politica de privacidade</label>
+                <input type="checkbox" name="terms" class="form__input-checkbox" id="inputTerms"/>
+                <label class="form__label" for="inputTerms">Concordo com os termos e politica de privacidade</label>
             <div class="form__group">
 
             </div>
-            
+
             <div>
                 <label class="form__label">Enviar</label>  
             </div>
