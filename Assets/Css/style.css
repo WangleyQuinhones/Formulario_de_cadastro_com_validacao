@@ -49,5 +49,23 @@ ul {
     height: 100%;
 }
 
+.signup {
+    max-width: 50rem;
+    width: 100%;
+
+}
+
+
+.logo {
+    text-align: center;    
+}
+
+.logo__link {
+    background: url('/Assets/Imagens/Logo\ Caixa.png');
+    height: 9rem;    
+    width: 9rem;
+    display: inline-block;
+}
+
 
 
