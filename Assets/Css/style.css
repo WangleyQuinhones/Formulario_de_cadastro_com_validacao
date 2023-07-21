@@ -68,4 +68,53 @@ ul {
 }
 
 
+.form {
+    margin-top: 1.5rem;
+    }
+.signup__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #222c58;
+    margin-top: 2rem;
+   
+}
+
+.form__group {
+   margin-bottom: 2rem;
+   position: relative;
+   
+}
+
+
+.form__input-text {
+    height: 6rem;
+    width: 100%;
+    background-color:  #F5F6F8;
+    border: .2rem solid #EDEDF1;
+    border-radius: .8rem;
+    outline: none; 
+    position: relative;
+    padding-left: 4.5rem;
+    font-size: 1.5rem;    
+
+         
+}
+
+
+.form__input-text::placeholder {
+    color: #C1C6D0;
+    font-weight: bold;
+
+
+}
+
+
+.form__label.hide {
+    position: absolute;
+    left: 0;
+    top:1rem;
+}
+
 
