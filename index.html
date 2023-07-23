@@ -18,26 +18,35 @@
         <form class="form">
             <div class="form__group">
                 <label class="form__label hide" for="inputName">Nome</label>
-                <input type="text" name="name" class="form__input-text" id="inputName" placeholder="Nome"/>
+                <input type="text" name="name" class="form__input-text" id="inputName" placeholder="Nome" required data-input/>
                 <i class="form__input-icon fas fa-user"></i>
+                <span class="form__message-error" data-error-message></span>
             </div>
-            <div class="form__group"></div>
-                <label class="form__label hide" for="inputemail">E-mail</label>
-                <input type="email" name="email" class="form__input-text" id="inputemail" placeholder="E-mail"/>
-                <i class="form__input-icon fas fa-envelope"></i>
             <div class="form__group">
-
+                <label class="form__label hide" for="inputEmail">E-mail</label>
+                <input type="email" name="email" class="form__input-text" id="inputEmail" placeholder="E-mail" required data-input />
+                <i class="form__input-icon fas fa-envelope"></i>
+                <span class="form__message-error" data-error-message></span>
             </div>
-                <label class="form__label hide" for="inputpassword">Senha</label>
-                <input type="password" name="password" class="form__input-text" id="inputpassword" placeholder="Senha"/>
+            <div class="form__group">
+                <label class="form__label hide" for="inputPassword">Senha</label>
+                <input type="password" name="password" class="form__input-text" id="inputPassword" placeholder="Senha" required data-input />
                 <i class="form__input-icon fas fa-lock"></i>
+                <i class="form__input-icon fas fa-eye" data-password-eye></i>
+                <span class="form__message-error" data-error-message></span>  
+
                 <div class="requeriments">
+                    <div class="requeriments__progress-bar"></div>
                     <div class="requeriments__Description">A Senha deverá ter:</div>
                     <ul class="requeriments__list">
-                        <li class="requeriments__item">Pelo menos uma letra maiúscula e uma minúscula </li>
-                        <li class="requeriments__item">Pelo menos um número</li>
-                        <li class="requeriments__item">Pelo menos um caractere especial</li>
-                        <li class="requeriments__item">Pelo menos oito caracteres</li>
+                        <li class="requeriments__item"><i class="fas"></i>
+                            Pelo menos uma letra maiúscula e uma minúscula </li>
+                        <li class="requeriments__item"><i class="fas"></i>
+                            Pelo menos um número</li>
+                        <li class="requeriments__item"><i class="fas"></i>
+                            Pelo menos um caractere especial</li>
+                        <li class="requeriments__item"><i class="fas"></i>
+                            Pelo menos oito caracteres</li>
                     </ul>
                 </div>
 
@@ -45,14 +54,15 @@
 
             </div>
                 <input type="checkbox" name="terms" class="form__input-checkbox" id="inputTerms"/>
-                <label class="form__label" for="inputTerms">Concordo com os termos e politica de privacidade</label>
-            <div class="form__group">
+                <label class="form__label" for="inputTerms">Concordo com os <a class="form__link" href="/">
+                     termos</a> e <a class="form__link" href="/">politica de privacidade</a></label>
+                     <span class="form__message-error" data-error-message></span>  
+
 
             </div>
 
-            <div>
-                <label class="form__label">Enviar</label>  
-                <button class="form__button-submit" type="submitb">Enviar</button>
+            <div class="form__group form__group--center">
+                    <button class="form__button-submit" type="submit">Enviar</button>
             </div>
                 
         </form>
@@ -60,6 +70,6 @@
 
 
     </div>
-    
+    <script src="/Assets/Js/form-validation.js"></script>
 </body>
 </html>
