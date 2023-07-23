@@ -117,4 +117,14 @@ ul {
     top:1rem;
 }
 
+.form__input-icon {
+    color: #8A93A5;
+    cursor: pointer;
+    font-size: 1.5rem;
+    left: 1.5rem;
+    position: absolute;
+    top: 2.2rem;
+
+}
+
 
