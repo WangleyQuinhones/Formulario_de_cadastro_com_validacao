@@ -15,7 +15,7 @@
             <a class="logo__link" href="/"></a>
         </div>
         <h1 class="signup__title">Cadastre-se</h1>
-        <form class="form">
+        <form class="form" data-form>
             <div class="form__group">
                 <label class="form__label hide" for="inputName">Nome</label>
                 <input type="text" name="name" class="form__input-text" id="inputName" placeholder="Nome" required data-input/>
@@ -36,24 +36,24 @@
                 <span class="form__message-error" data-error-message></span>  
 
                 <div class="requeriments">
-                    <div class="requeriments__progress-bar"></div>
+                    <div class="requeriments__progress-bar"data-required-progressbar></div>
                     <div class="requeriments__Description">A Senha deverá ter:</div>
                     <ul class="requeriments__list">
-                        <li class="requeriments__item"><i class="fas"></i>
-                            Pelo menos uma letra maiúscula e uma minúscula </li>
-                        <li class="requeriments__item"><i class="fas"></i>
-                            Pelo menos um número</li>
-                        <li class="requeriments__item"><i class="fas"></i>
-                            Pelo menos um caractere especial</li>
-                        <li class="requeriments__item"><i class="fas"></i>
-                            Pelo menos oito caracteres</li>
+                        <li class="requeriments__item" data-required-item><i class="fas"></i>
+                            Pelo menos 1 letra maiúscula e 1 minúscula </li>
+                        <li class="requeriments__item" data-required-item><i class="fas"></i>
+                            Pelo menos 1 número</li>
+                        <li class="requeriments__item" data-required-item><i class="fas"></i>
+                            Pelo menos 1 caractere especial</li>
+                        <li class="requeriments__item" data-required-item><i class="fas"></i>
+                            Pelo menos 8 caracteres</li>
                     </ul>
                 </div>
 
             <div class="form__group">
 
             </div>
-                <input type="checkbox" name="terms" class="form__input-checkbox" id="inputTerms"/>
+                <input type="checkbox" name="terms" class="form__input-checkbox" id="inputTerms" required data-input/>
                 <label class="form__label" for="inputTerms">Concordo com os <a class="form__link" href="/">
                      termos</a> e <a class="form__link" href="/">politica de privacidade</a></label>
                      <span class="form__message-error" data-error-message></span>  
