@@ -42,14 +42,20 @@
         const {value} = event.target
         const lowerCasePattern = new RegExp(/[a-z]/)
         const upperCasePattern = new RegExp(/[A-Z]/)
-        if(value.match(lowerCasePattern) && value.match(upperCasePattern) ){
-            console.log(true)
+        const numberPattern = new RegExp(/[0-9]/)
+        if(value.match(lowerCasePattern) && value.match(upperCasePattern)){
+            requirements('lowerCasePattern').classList.add('checked')
         }
+       
+    }
+    
+        
+
 
         // Regular Expression 
         //RegExp
 
-    }    // Função que valida os campos do tipo checkbox e radiobutton
+       // Função que valida os campos do tipo checkbox e radiobutton
 
     const onInputFocus = (event) => {       
         hideMessageError(fields[event.target.name])                
