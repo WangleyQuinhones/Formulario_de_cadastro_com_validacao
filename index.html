@@ -32,20 +32,24 @@
                 <label class="form__label hide" for="inputPassword">Senha</label>
                 <input type="password" name="password" class="form__input-text" id="inputPassword" placeholder="Senha" required data-input />
                 <i class="form__input-icon fas fa-lock"></i>
-                <i class="form__input-icon fas fa-eye" data-password-eye></i>
+                <i class="form__input-icon fas fa-eye slash" data-password-eye></i>
                 <span class="form__message-error" data-error-message></span>  
 
                 <div class="requeriments">
                     <div class="requeriments__progress-bar"data-required-progressbar></div>
                     <div class="requeriments__Description">A Senha deverá ter:</div>
                     <ul class="requeriments__list">
-                        <li class="requeriments__item" data-required-item><i class="fas"></i>
+                        <li class="requirements__item" data-requirement-item="lowerUpperCase">
+                            <i class="fas"></i>
                             Pelo menos 1 letra maiúscula e 1 minúscula </li>
-                        <li class="requeriments__item" data-required-item><i class="fas"></i>
+                            <li class="requirements__item" data-requirement-item="number">
+                            <i class="fas"></i>
                             Pelo menos 1 número</li>
-                        <li class="requeriments__item" data-required-item><i class="fas"></i>
+                            <li class="requirements__item" data-requirement-item="specialCharacter">
+                            <i class="fas"></i>
                             Pelo menos 1 caractere especial</li>
-                        <li class="requeriments__item" data-required-item><i class="fas"></i>
+                            <li class="requirements__item" data-requirement-item="minCharacter">
+                            <i class="fas"></i>
                             Pelo menos 8 caracteres</li>
                     </ul>
                 </div>
@@ -70,6 +74,7 @@
 
 
     </div>
+    <script src="/Assets/Js/show-passoword.js"></script>
     <script src="/Assets/Js/form-validation.js"></script>
 </body>
 </html>
