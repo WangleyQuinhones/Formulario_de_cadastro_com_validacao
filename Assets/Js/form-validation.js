@@ -67,7 +67,8 @@
     const setRequirementItensElements = () => {
         const requirementItensElements = document.querySelectorAll('[data-requirement-item]')
         for (const requirementItem of requirementItensElements) {
-        const requirementName = requirementItem.dataset[requirement-item]
+        const requirementName = requirementItem.dataset ['requirementItem']
+        console.log(requirementName)
         }
         
     }
