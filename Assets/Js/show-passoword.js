@@ -1,27 +1,26 @@
 'use strict';
-(() => {   
-    const passowordEye = document.querySelector('data-password-eye')
-    const inptuPassoword = document.querySelector('[name="password"]')
-    const state = {showpassword: false}
 
-    const onPasswordEyeClick = (event) => {
-        passowordEye.classList.toggle('slash')
-        inptuPassoword.setAttribute('type', state.passoword ? 'password' : 'text')
-        state.showpassword = !state.showpassword        
+(() => {
+    const passwordEye = document.querySelector('[data-password-eye]')
+    const inputPassword = document.querySelector('[name="password"]')
+    const state = { showPassword: false }
     
+    const onPasswordEyeClick = () => {
+        passwordEye.classList.toggle('slash')
+        inputPassword.setAttribute('type', state.showPassword ? 'password' : 'text')
+        state.showPassword = !state.showPassword
     }
 
     const setListeners = () => {
-        passowordEye.addEventListener('click', onPasswordEyeClick)
-
+        passwordEye.addEventListener('click', onPasswordEyeClick)
     }
 
-
     const init = () => {
-         setListeners()       
+        setListeners()
     }
 
     init()
 
-
 })()
+
+

@@ -39,7 +39,15 @@
     }
 
     const onPasswordKeyup = (event) => {
-        
+        const {value} = event.target
+        const lowerCasePattern = new RegExp(/[a-z]/)
+        const upperCasePattern = new RegExp(/[A-Z]/)
+        if(value.match(lowerCasePattern) && value.match(upperCasePattern) ){
+            console.log(true)
+        }
+
+        // Regular Expression 
+        //RegExp
 
     }    // Função que valida os campos do tipo checkbox e radiobutton
 
@@ -68,8 +76,7 @@
         const requirementItensElements = document.querySelectorAll('[data-requirement-item]')
         for (const requirementItem of requirementItensElements) {
         const requirementName = requirementItem.dataset ['requirementItem']
-        console.log(requirementName)
-        }
+        requirements[requirementName] = requirementItem        }
         
     }
 
